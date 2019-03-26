@@ -12,7 +12,7 @@ APP_NAME=$1
 
 # Variables
 
-SLN_FOLDER=$APP_NAME/src
+SLN_FOLDER=src
 API_PROJ_NAME=$APP_NAME.Api
 TEST_PROJ_NAME=$APP_NAME.Api.Tests
 
@@ -24,7 +24,7 @@ dotnet new webapi -o $SLN_FOLDER/$API_PROJ_NAME
 dotnet new xunit -o $SLN_FOLDER/$TEST_PROJ_NAME
 dotnet sln $SLN_FOLDER add $SLN_FOLDER/$API_PROJ_NAME/$API_PROJ_NAME.csproj
 dotnet sln $SLN_FOLDER add $SLN_FOLDER/$TEST_PROJ_NAME/$TEST_PROJ_NAME.csproj
-
+dotnet add $SLN_FOLDER/$TEST_PROJ_NAME/$TEST_PROJ_NAME.csproj reference $SLN_FOLDER/$API_PROJ_NAME/$API_PROJ_NAME.csproj
 
 # Create script to run api from root folder
 
