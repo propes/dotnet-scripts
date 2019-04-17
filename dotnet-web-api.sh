@@ -32,7 +32,7 @@ dotnet add $SLN_FOLDER/$TEST_PROJ_NAME/$TEST_PROJ_NAME.csproj reference $SLN_FOL
 
 # Add packages
 
-dotnet add $SLN_FOLDER/$TEST_PROJ_NAME/$TEST_PROJ_NAME. csproj package moq
+dotnet add $SLN_FOLDER/$TEST_PROJ_NAME/$TEST_PROJ_NAME.csproj package moq
 
 
 # Create script to run api from root folder
