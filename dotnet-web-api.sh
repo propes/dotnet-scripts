@@ -50,7 +50,9 @@ dotnet add $API_TEST_PROJ_FILE reference $API_PROJ_FILE $DOMAIN_PROJ_FILE
 # Add packages
 
 dotnet add $DOMAIN_TEST_PROJ_FILE package moq
+dotnet add $DOMAIN_TEST_PROJ_FILE package fluentassertions
 dotnet add $API_TEST_PROJ_FILE package moq
+dotnet add $API_TEST_PROJ_FILE package fluentassertions
 
 # Create script to run api from root folder
 
