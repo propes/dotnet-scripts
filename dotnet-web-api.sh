@@ -54,6 +54,14 @@ dotnet add $DOMAIN_TEST_PROJ_FILE package fluentassertions
 dotnet add $API_TEST_PROJ_FILE package moq
 dotnet add $API_TEST_PROJ_FILE package fluentassertions
 
+# Download .gitignore
+wget https://raw.githubusercontent.com/github/gitignore/master/VisualStudio.gitignore \
+    -O $SLN_FOLDER/.gitignore
+
+# Download azure pipelines file
+wget https://raw.githubusercontent.com/microsoft/azure-pipelines-yaml/master/templates/asp.net-core.yml \
+    -O $SLN_FOLDER/azure-pipelines.yml
+
 # Create script to run api from root folder
 
 echo dotnet run -p $API_PROJ_NAME > $SLN_FOLDER/dotnet-run.sh
