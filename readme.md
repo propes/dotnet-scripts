@@ -10,4 +10,4 @@ Scripts:
 
 Usage:
 
-`sh dotnet-web-api.sh TestApp`
+`sh dotnet-web-api.sh test-app`

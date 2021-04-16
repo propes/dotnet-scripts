@@ -14,7 +14,7 @@ APP_NAME=$1
 
 SLN_FOLDER=$APP_NAME/src
 CLASSLIB_PROJ_NAME=$APP_NAME
-TEST_PROJ_NAME=$APP_NAME.Tests
+TEST_PROJ_NAME=$APP_NAME.tests
 
 
 # Set up dotnet solution and projects
