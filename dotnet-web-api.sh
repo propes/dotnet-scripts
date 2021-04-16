@@ -57,4 +57,4 @@ dotnet add $API_TEST_PROJ_FILE package fluentassertions
 # Create script to run api from root folder
 
 echo dotnet run -p $API_PROJ_NAME > $SLN_FOLDER/dotnet-run.sh
-
+chmod +x $SLN_FOLDER/run.sh
