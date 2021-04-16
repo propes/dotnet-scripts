@@ -65,4 +65,4 @@ wget https://raw.githubusercontent.com/microsoft/azure-pipelines-yaml/master/tem
 # Create script to run api from root folder
 
 echo dotnet run -p $API_PROJ_NAME > $SLN_FOLDER/dotnet-run.sh
-chmod +x $SLN_FOLDER/run.sh
+chmod +x $SLN_FOLDER/dotnet-run.sh
