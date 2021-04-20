@@ -59,7 +59,7 @@ wget https://raw.githubusercontent.com/github/gitignore/master/VisualStudio.giti
     -O $SLN_FOLDER/.gitignore
 
 # Download azure pipelines file
-wget https://raw.githubusercontent.com/microsoft/azure-pipelines-yaml/master/templates/asp.net-core.yml \
+wget https://raw.githubusercontent.com/propes/azure-pipelines-samples/main/app-service.yml \
     -O $SLN_FOLDER/azure-pipelines.yml
 
 # Create script to run api from root folder
